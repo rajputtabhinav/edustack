@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/*.{js,cjs}",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/api/webhook", "dest": "/api/webhook.js" },
+    { "src": "/api/reminders", "dest": "/api/reminders.js" },
+    { "src": "/api/register-webhook", "dest": "/api/register-webhook.js" }
+  ]
+}
